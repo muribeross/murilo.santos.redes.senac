@@ -1,9 +1,9 @@
 a = 10
-b = 2
+b = 0
 
 if b != 0:
     resu = a / b
-print(resu)
+    print(resu)
 
 else:
-print("erro")
+    print("erro")
