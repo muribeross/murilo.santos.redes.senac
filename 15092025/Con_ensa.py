@@ -47,17 +47,8 @@ for F in [0, 1]:
                 print(f"{F} {B} {C} {M} | {A}")
 print()
 
-# Nível 4 — Código Final com tabela verdade completa
-
-def alarme(F, B, C, M):
-    return int(F or (B and C) or (M and not C))
-
-print("Nível 4 — Tabela Verdade Completa")
-print("F B C M | A")
-print("-----------")
-for F in [0, 1]:
-    for B in [0, 1]:
-        for C in [0, 1]:
-            for M in [0, 1]:
-                A = alarme(F, B, C, M)
-                print(f"{F} {B} {C} {M} | {A}")
+if __name__ == "__main__":
+    alarme_nivel1()
+    alarme_nivel2()
+    alarme_nivel3()
+  
